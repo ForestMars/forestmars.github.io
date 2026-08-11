@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Forest Mars — Systems & AI Infrastructure</title>
+  <title>Forest Mars - Systems & AI Infrastructure</title>
   <script src="https://cdn.tailwindcss.com"></script>
   <style>
     @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,300;0,400;0,500;0,700;1,400&family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;1,6..72,400&family=Inter:wght@300;400;500;600;700&display=swap');
@@ -29,19 +29,56 @@
       font-family: 'JetBrains Mono', monospace;
     }
 
+    /* Timeline spine tracking line */
     .timeline-spine {
       position: absolute;
       left: 1.25rem;
       top: 2rem;
       bottom: 2rem;
       width: 2px;
-      background: linear-gradient(180deg, #f59e0b 0%, #1e2330 35%, #1e2330 85%, #334155 100%);
+      background: #1e2330;
+      z-index: 0;
+    }
+
+    .timeline-progress {
+      position: absolute;
+      left: 1.25rem;
+      top: 2rem;
+      width: 2px;
+      height: 0%;
+      background: linear-gradient(180deg, #1e2330 0%, #f59e0b 80%, #f59e0b 100%);
+      z-index: 1;
+      transition: height 0.1s ease-out;
     }
 
     @media (min-width: 768px) {
-      .timeline-spine {
+      .timeline-spine, .timeline-progress {
         left: 2.25rem;
       }
+    }
+
+    /* Node marker active focus states */
+    .node-marker {
+      transition: all 0.3s ease;
+      z-index: 10;
+    }
+
+    .node-marker.active {
+      background-color: #f59e0b !important;
+      color: #020617 !important;
+      border-color: #f59e0b !important;
+      box-shadow: 0 0 0 4px rgba(245, 158, 11, 0.25);
+    }
+
+    /* Keyboard navigation focus outline */
+    section:focus {
+      outline: none;
+    }
+    
+    section:focus-visible {
+      outline: 2px solid rgba(245, 158, 11, 0.5);
+      outline-offset: 8px;
+      border-radius: 0.75rem;
     }
   </style>
 </head>
@@ -68,15 +105,16 @@
     </header>
 
     <!-- Reverse Chronological Narrative Journey -->
-    <main class="relative pl-10 md:pl-20 space-y-20">
+    <main class="relative pl-10 md:pl-20 space-y-20" id="main-timeline">
       
-      <!-- The Timeline Spine -->
+      <!-- Timeline Track and Dynamic Scroll Indicator -->
       <div class="timeline-spine"></div>
+      <div class="timeline-progress" id="timeline-progress"></div>
 
       <!-- SECTION 1: Active Frontier & AI Security -->
-      <section class="relative space-y-6">
+      <section id="section-1" tabindex="0" class="timeline-section relative space-y-6 scroll-mt-24">
         <!-- Node Marker -->
-        <div class="absolute -left-10 md:-left-20 top-1.5 flex items-center justify-center w-6 h-6 md:w-9 md:h-9 rounded-full bg-amber-500 text-slate-950 mono text-xs font-bold ring-4 ring-amber-500/20">
+        <div class="node-marker absolute -left-10 md:-left-20 top-1.5 flex items-center justify-center w-6 h-6 md:w-9 md:h-9 rounded-full bg-slate-900 border-2 border-slate-700 text-slate-400 mono text-xs font-bold">
           01
         </div>
 
@@ -108,7 +146,7 @@
 
           <!-- Description -->
           <p class="text-sm text-slate-300 leading-relaxed max-w-3xl font-normal">
-            AIR-Kit implements the crucial first item from the 30/60/90 CTO Remediation Playbook—establishing immediate execution containment and instant incident isolation. Built as a direct response to the OpenAI lab leak, it serves as the emergency brake and firewall for autonomous agent runtimes when agents bypass execution policies.
+            AIR-Kit implements the crucial first item from the 30/60/90 CTO Remediation Playbook, establishing immediate execution containment and instant incident isolation. Built as a direct response to the OpenAI lab leak, it serves as the emergency brake and firewall for autonomous agent runtimes when agents bypass execution policies.
           </p>
 
           <!-- Divider -->
@@ -119,7 +157,7 @@
             <div class="space-y-2">
               <h4 class="font-bold text-sm text-slate-100">Build</h4>
               <p class="text-xs text-slate-400 leading-relaxed">
-                Self-host directly using the open GitHub repository. AIR-Kit runs GLM 5.2—the exact model Hugging Face leveraged to defend against breach attacks—and will soon feature native interconnect support to seamlessly run Inkling inside your custom pipeline.
+                Self-host directly using the open GitHub repository. AIR-Kit runs GLM 5.2, the exact model Hugging Face leveraged to defend against breach attacks, and will soon feature native interconnect support to seamlessly run Inkling inside your custom pipeline.
               </p>
             </div>
 
@@ -143,7 +181,7 @@
                 <h3 class="text-xl font-bold text-slate-100 mt-0.5">The Lost Weekend</h3>
               </div>
               <p class="text-xs text-slate-300 leading-relaxed">
-                The forensic post-mortem on the production agent breakout that inspired AIR-Kit's creation. Documents a multi-agent state cascade that breached execution guardrails, featuring the foundational 30/60/90 CTO Remediation Playbook—starting with Item #1: immediate containment and execution isolation.
+                The forensic post-mortem on the production agent breakout that inspired AIR-Kit's creation. Documents a multi-agent state cascade that breached execution guardrails, featuring the foundational 30/60/90 CTO Remediation Playbook, starting with Item #1: immediate containment and execution isolation.
               </p>
             </div>
             <div class="pt-3 border-t border-slate-800/80 mt-4">
@@ -187,9 +225,9 @@
       </section>
 
       <!-- SECTION 2: Agentic Architecture & Distributed Systems -->
-      <section class="relative space-y-8">
+      <section id="section-2" tabindex="0" class="timeline-section relative space-y-8 scroll-mt-24">
         <!-- Node Marker -->
-        <div class="absolute -left-10 md:-left-20 top-1.5 flex items-center justify-center w-6 h-6 md:w-9 md:h-9 rounded-full bg-slate-900 border-2 border-slate-700 text-slate-400 mono text-xs font-bold">
+        <div class="node-marker absolute -left-10 md:-left-20 top-1.5 flex items-center justify-center w-6 h-6 md:w-9 md:h-9 rounded-full bg-slate-900 border-2 border-slate-700 text-slate-400 mono text-xs font-bold">
           02
         </div>
 
@@ -204,7 +242,7 @@
           <!-- Card 1: Transitive Expert Error -->
           <div class="p-5 rounded-xl bg-slate-900/40 border border-slate-800 flex flex-col justify-between h-full">
             <div class="space-y-2">
-              <span class="mono text-[10px] text-slate-500 font-semibold uppercase tracking-wider">ROUTING DYNAMICS</span>
+              <span class="mono text-[10px] text-slate-500 font-semibold uppercase tracking-wider">ROUTING TOPOLOGY</span>
               <h3 class="font-bold text-slate-200 text-base">Transitive Expert Error</h3>
               <p class="text-xs text-slate-400 leading-relaxed">
                 Formal mathematical and empirical research modeling error propagation cascades, routing failure modes, and boundary collapse across multi-agent topologies. Supported by open archival datasets on Zenodo.
@@ -248,7 +286,7 @@
         <!-- Subsection: Protocol Analysis & Telemetry Architecture -->
         <div class="p-6 rounded-xl bg-slate-900/20 border border-slate-800/80 space-y-4">
           <div class="space-y-1">
-            <span class="mono text-[10px] text-amber-500 font-semibold tracking-wider uppercase">SUBSECTION &mdash; PROTOCOL & INSPECTION LAYERS</span>
+            <span class="mono text-[10px] text-slate-500 font-semibold tracking-wider uppercase">PROTOCOL & INSPECTION LAYERS</span>
             <h3 class="text-xl font-bold text-slate-200">Protocol Analysis & Telemetry Architecture</h3>
           </div>
 
@@ -263,7 +301,7 @@
             <div class="p-4 rounded-lg bg-slate-900/60 border border-slate-800 space-y-2">
               <h4 class="font-bold text-sm text-slate-200">Observability & Telemetry (O11y)</h4>
               <p class="text-xs text-slate-400 leading-relaxed">
-                Fine-grained tracing architectures built specifically for agent reasoning spans—capturing context transitions, tool invocation latencies, and latent state shifts before runtime errors degrade system stability.
+                Fine-grained tracing architectures built specifically for agent reasoning spans, capturing context transitions, tool invocation latencies, and latent state shifts before runtime errors degrade system stability.
               </p>
             </div>
           </div>
@@ -272,9 +310,9 @@
       </section>
 
       <!-- SECTION 3: Mobilizing Ecosystems -->
-      <section class="relative space-y-6">
+      <section id="section-3" tabindex="0" class="timeline-section relative space-y-6 scroll-mt-24">
         <!-- Node Marker -->
-        <div class="absolute -left-10 md:-left-20 top-1.5 flex items-center justify-center w-6 h-6 md:w-9 md:h-9 rounded-full bg-slate-900 border-2 border-slate-700 text-slate-400 mono text-xs font-bold">
+        <div class="node-marker absolute -left-10 md:-left-20 top-1.5 flex items-center justify-center w-6 h-6 md:w-9 md:h-9 rounded-full bg-slate-900 border-2 border-slate-700 text-slate-400 mono text-xs font-bold">
           03
         </div>
 
@@ -285,7 +323,7 @@
 
         <div class="serif text-lg text-slate-300 leading-relaxed">
           <p>
-            Bridging technical execution with high-bandwidth developer coordination—from executive networks trading unvarnished field reports to scaling global open-source communities.
+            Bridging technical execution with high-bandwidth developer coordination, from executive networks trading unvarnished field reports to scaling global open-source communities.
           </p>
         </div>
 
@@ -295,19 +333,19 @@
           <div class="p-5 rounded-xl bg-slate-900/40 border border-slate-800 flex flex-col justify-start h-full space-y-2">
             <h3 class="font-bold text-slate-200 text-base h-7 flex items-center">CTO Lunch NYC</h3>
             <p class="text-xs text-slate-400 leading-relaxed">
-              Invitation-only network and monthly publication for executive engineering leaders in NYC. Focused on real-world infrastructure tradeoffs, organizational scale, and technical security without marketing fluff.
+              Leadership community and monthly publication for executive engineering leaders in NYC. Focused on real-world infrastructure tradeoffs, organizational scale, and technical security without marketing fluff.
             </p>
           </div>
 
           <div class="p-5 rounded-xl bg-slate-900/40 border border-slate-800 flex flex-col justify-start h-full space-y-2">
             <h3 class="font-bold text-slate-200 text-base h-7 flex items-center">OpenCamps</h3>
             <p class="text-xs text-slate-400 leading-relaxed">
-              Co-founded and scaled the premier open-source event series of its era—becoming the largest event in open source history—bringing together maintainers, enterprise architects, and communities across verticals including AI.camp, my personal favorite.
+              Co-founded and scaled the premier open-source event series of its era, becoming the largest event in open source history, bringing together maintainers, enterprise architects, and communities across verticals including AI.camp, my personal favorite.
             </p>
           </div>
 
           <div class="p-5 rounded-xl bg-slate-900/40 border border-slate-800 flex flex-col justify-start h-full space-y-2">
-            <h3 class="font-bold text-slate-200 text-base h-7 flex items-center">United Nations Hackathon</h3>
+            <h3 class="font-bold text-slate-200 text-base h-7 flex items-center">First UN Hackathon</h3>
             <p class="text-xs text-slate-400 leading-relaxed">
               Pioneered and executed the first official hackathon inside UN headquarters, navigating international governance to enable rapid technical execution under complex institutional constraints.
             </p>
@@ -317,9 +355,9 @@
       </section>
 
       <!-- SECTION 4: Thoughtfulness -->
-      <section class="relative space-y-6">
+      <section id="section-4" tabindex="0" class="timeline-section relative space-y-6 scroll-mt-24">
         <!-- Node Marker -->
-        <div class="absolute -left-10 md:-left-20 top-1.5 flex items-center justify-center w-6 h-6 md:w-9 md:h-9 rounded-full bg-slate-900 border-2 border-slate-700 text-slate-400 mono text-xs font-bold">
+        <div class="node-marker absolute -left-10 md:-left-20 top-1.5 flex items-center justify-center w-6 h-6 md:w-9 md:h-9 rounded-full bg-slate-900 border-2 border-slate-700 text-slate-400 mono text-xs font-bold">
           04
         </div>
 
@@ -340,9 +378,9 @@
       </section>
 
       <!-- SECTION 5: One More Thing -->
-      <section class="relative space-y-6">
+      <section id="section-5" tabindex="0" class="timeline-section relative space-y-6 scroll-mt-24">
         <!-- Node Marker -->
-        <div class="absolute -left-10 md:-left-20 top-1.5 flex items-center justify-center w-6 h-6 md:w-9 md:h-9 rounded-full bg-slate-900 border-2 border-slate-700 text-slate-400 mono text-xs font-bold">
+        <div class="node-marker absolute -left-10 md:-left-20 top-1.5 flex items-center justify-center w-6 h-6 md:w-9 md:h-9 rounded-full bg-slate-900 border-2 border-slate-700 text-slate-400 mono text-xs font-bold">
           05
         </div>
 
@@ -380,7 +418,7 @@
           <p class="text-slate-400 text-xs leading-relaxed">
             Architectural consultation, advisory, or emergency AI security response:
           </p>
-          <div id="cta-email-container"></div>
+          <div id="cta-email-container" class="flex justify-center mt-2"></div>
         </div>
 
         <div class="space-y-2">
@@ -393,7 +431,7 @@
 
       <div class="pt-6 border-t border-slate-900 flex flex-col md:flex-row justify-between items-center text-[11px] mono text-slate-500 gap-4">
         <div>
-          &copy; Forest Mars &mdash; Systems Architecture & Security Infrastructure
+          &copy; Forest Mars - Systems Architecture & Security Infrastructure
         </div>
         <div>
           NYC / Global Execution
@@ -403,20 +441,117 @@
 
   </div>
 
-  <!-- Email Obfuscation Script -->
+  <!-- Runtime JavaScript Engines -->
   <script>
+    // 1. Email Obfuscation Engine (Assembly via CharCodes & Base64 decoding)
     (function() {
-      var user = "mars";
-      var domain = "mlops.nyc";
-      var addr = user + "@" + domain;
+      // "mars@mlops.nyc" split & obfuscated
+      var encodedUser = [109, 97, 114, 115]; // mars
+      var encodedDomain = "bWxvcHMubnlj"; // mlops.nyc in base64
+      
+      var u = String.fromCharCode.apply(null, encodedUser);
+      var d = atob(encodedDomain);
+      var addr = u + "@" + d;
+      
       var container = document.getElementById("cta-email-container");
       if (container) {
         var a = document.createElement("a");
-        a.href = "mailto:" + addr;
-        a.className = "inline-block mono text-xs px-3 py-1.5 rounded bg-amber-500/10 text-amber-400 border border-amber-500/40 hover:bg-amber-500/20 transition-all font-semibold";
+        a.href = "javascript:void(0)";
+        a.className = "inline-block mono text-xs px-4 py-2 rounded bg-amber-500/10 text-amber-400 border border-amber-500/40 hover:bg-amber-500/20 transition-all font-semibold";
         a.innerHTML = addr + " &rarr;";
+        
+        // Dynamically append mailto link on user interaction to prevent passive DOM harvesting
+        a.addEventListener("click", function() {
+          window.location.href = "mailto:" + addr;
+        });
+        
         container.appendChild(a);
       }
+    })();
+
+    // 2. Animated Scroll Tracking & Timeline Node Illumination
+    (function() {
+      var progressLine = document.getElementById("timeline-progress");
+      var mainTimeline = document.getElementById("main-timeline");
+      var sections = Array.from(document.querySelectorAll(".timeline-section"));
+      
+      function updateTimeline() {
+        var timelineRect = mainTimeline.getBoundingClientRect();
+        var viewportHeight = window.innerHeight;
+        
+        // Target focal point at 35% of the viewport height
+        var focalY = viewportHeight * 0.35;
+        var progressHeight = Math.max(0, Math.min(timelineRect.height, focalY - timelineRect.top));
+        var progressPercent = (progressHeight / timelineRect.height) * 100;
+        
+        progressLine.style.height = progressPercent + "%";
+
+        // Illumination threshold & active section tracking
+        var currentActiveIndex = -1;
+        sections.forEach(function(sec, index) {
+          var rect = sec.getBoundingClientRect();
+          var marker = sec.querySelector(".node-marker");
+          
+          if (rect.top <= focalY + 50) {
+            currentActiveIndex = index;
+          }
+          
+          if (rect.top <= focalY + 50 && rect.bottom >= focalY - 100) {
+            marker.classList.add("active");
+          } else {
+            marker.classList.remove("active");
+          }
+        });
+      }
+
+      window.addEventListener("scroll", updateTimeline, { passive: true });
+      window.addEventListener("resize", updateTimeline, { passive: true });
+      updateTimeline();
+    })();
+
+    // 3. Section Keyboard Navigation Engine (Arrow keys Up/Down + Vim h/j/k/l)
+    (function() {
+      var sections = Array.from(document.querySelectorAll(".timeline-section"));
+      var currentIndex = -1;
+
+      function activeFocusedIndex() {
+        return sections.findIndex(function(sec) {
+          return sec === document.activeElement || sec.contains(document.activeElement);
+        });
+      }
+
+      function navigateTo(index) {
+        if (index >= 0 && index < sections.length) {
+          currentIndex = index;
+          sections[currentIndex].focus({ preventScroll: false });
+          sections[currentIndex].scrollIntoView({ behavior: "smooth", block: "center" });
+        }
+      }
+
+      document.addEventListener("keydown", function(e) {
+        // Prevent hijacking if user is interacting with text inputs or controls
+        if (["INPUT", "TEXTAREA", "SELECT", "BUTTON"].includes(document.activeElement.tagName)) {
+          return;
+        }
+
+        var idx = activeFocusedIndex();
+        if (idx !== -1) currentIndex = idx;
+
+        var key = e.key.toLowerCase();
+
+        // Down / Next: ArrowDown, 'j', 'l'
+        if (key === "arrowdown" || key === "j" || key === "l") {
+          e.preventDefault();
+          var next = currentIndex + 1 < sections.length ? currentIndex + 1 : 0;
+          navigateTo(next);
+        }
+        // Up / Previous: ArrowUp, 'k', 'h'
+        else if (key === "arrowup" || key === "k" || key === "h") {
+          e.preventDefault();
+          var prev = currentIndex - 1 >= 0 ? currentIndex - 1 : sections.length - 1;
+          navigateTo(prev);
+        }
+      });
     })();
   </script>
 
