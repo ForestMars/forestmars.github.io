@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Forest Mars — Chief Technology Officer & Systems Architect</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,300;0,400;0,500;0,700;1,400&family=Inter:wght@300;400;500;600;700&display=swap');
+    
+    :root {
+      --bg: #090a0f;
+      --panel: #11131a;
+      --border: #1f2430;
+      --accent: #f59e0b;
+    }
+
+    body {
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+      background-color: var(--bg);
+      color: #cbd5e1;
+    }
+
+    code, .mono {
+      font-family: 'JetBrains Mono', monospace;
+    }
+
+    .border-subtle {
+      border-color: var(--border);
+    }
+  </style>
+</head>
+<body class="min-h-screen flex flex-col justify-between selection:bg-amber-500/30 selection:text-amber-200">
+
+  <div class="max-w-5xl mx-auto px-6 py-12 md:py-20 w-full space-y-20">
+
+    <!-- Header / Manifesto Lead -->
+    <header class="space-y-8 border-b border-subtle pb-12">
+      <div class="flex flex-col md:flex-row md:items-baseline justify-between gap-4">
+        <div>
+          <h1 class="text-4xl md:text-6xl font-extrabold tracking-tight text-slate-100">Forest Mars</h1>
+          <p class="mono text-amber-500 text-sm mt-2 font-medium tracking-wide">CHIEF TECHNOLOGY OFFICER // SYSTEMS ARCHITECT</p>
+        </div>
+        <div class="mono text-xs text-slate-500 text-left md:text-right space-y-1">
+          <div>LOC: NEW YORK, NY</div>
+          <div>FOCUS: DISTRIBUTED SYSTEMS & AI TOPOLOGIES</div>
+        </div>
+      </div>
+
+      <p class="text-xl md:text-2xl text-slate-300 font-light leading-relaxed max-w-3xl">
+        Architecting high-throughput transaction engines, distributed state sync platforms, and researching fundamental structural failure modes in complex, multi-agent AI topologies.
+      </p>
+
+      <!-- Working Interactive Badges / Anchor Triggers -->
+      <div class="flex flex-wrap gap-4 text-xs mono pt-2">
+        <button data-scroll-to="leadership" class="px-3 py-1.5 rounded bg-amber-500/10 border border-amber-500/30 text-amber-400 hover:bg-amber-500/20 transition-colors cursor-pointer text-left">
+          15+ Years Systems Engineering
+        </button>
+        <button data-scroll-to="stack" class="px-3 py-1.5 rounded bg-slate-900 border border-subtle text-slate-400 hover:border-slate-600 hover:text-slate-200 transition-colors cursor-pointer text-left">
+          Distributed State Sync
+        </button>
+        <button data-scroll-to="research" class="px-3 py-1.5 rounded bg-slate-900 border border-subtle text-slate-400 hover:border-slate-600 hover:text-slate-200 transition-colors cursor-pointer text-left">
+          Agent Routing Dynamics
+        </button>
+        <button data-scroll-to="community" class="px-3 py-1.5 rounded bg-slate-900 border border-subtle text-slate-400 hover:border-slate-600 hover:text-slate-200 transition-colors cursor-pointer text-left">
+          Organizer @ CTO Lunch NYC
+        </button>
+      </div>
+    </header>
+
+    <main class="space-y-20">
+
+      <!-- Architectural Philosophy / Position Statement -->
+      <section class="space-y-6">
+        <div class="mono text-xs uppercase tracking-widest text-slate-500 font-bold">// Core Architectural Position</div>
+        <div class="bg-slate-900/40 border border-subtle p-8 rounded-xl space-y-4 text-slate-300 leading-relaxed text-lg font-light">
+          <p>
+            Enterprise systems frequently break not because of language runtime performance, but because of improper state boundary abstractions and naive consensus implementations. Standard ORMs, block-based state hacks, and monolithic sync engines collapse under distributed scale.
+          </p>
+          <p>
+            Building resilient systems requires explicit state synchronization protocols, deterministic message pipelines, and runtime selection aligned directly with physical execution limits—whether executing edge transaction networks or orchestrating non-deterministic AI routing pipelines.
+          </p>
+        </div>
+      </section>
+
+      <!-- Primary Research & Writing -->
+      <section id="research" class="space-y-8 scroll-mt-12">
+        <div class="flex justify-between items-baseline border-b border-subtle pb-4">
+          <h2 class="mono text-xs uppercase tracking-widest text-slate-500 font-bold">// Featured Research & Monograph Series</h2>
+          <span class="mono text-xs text-amber-500">PRIMARY PUBLICATIONS</span>
+        </div>
+
+        <div class="grid grid-cols-1 gap-8">
+          
+          <!-- Monograph -->
+          <article class="p-8 rounded-xl bg-slate-900/60 border border-amber-500/30 hover:border-amber-500/60 transition-all space-y-4 relative">
+            <div class="flex flex-col md:flex-row md:items-center justify-between gap-2">
+              <h3 class="text-2xl font-bold text-slate-100">
+                Transitive Expert Error and Routing Problems in Complex AI Systems
+              </h3>
+              <span class="mono text-xs px-2.5 py-1 rounded bg-amber-500/20 text-amber-300 border border-amber-500/40 w-fit">MONOGRAPH</span>
+            </div>
+            <p class="text-slate-300 leading-relaxed">
+              A foundational analysis investigating downstream context degradation, cascade failure modes, and non-deterministic routing vulnerabilities in multi-agent routing networks and Mixture-of-Experts (MoE) architectures. Explores how routing errors compound transitively across expert boundaries and provides structural primitives for error containment.
+            </p>
+            <div class="pt-2 flex items-center justify-between text-xs mono">
+              <span class="text-slate-500">Topic: AI Topology & Routing Mechanics</span>
+              <button onclick="toggleModal('monograph-modal')" class="text-amber-400 hover:text-amber-300 underline font-medium cursor-pointer">
+                View Paper Synopsis &rarr;
+              </button>
+            </div>
+          </article>
+
+          <!-- Writing Series -->
+          <article class="p-8 rounded-xl bg-slate-900/30 border border-subtle hover:border-slate-700 transition-all space-y-4">
+            <div class="flex flex-col md:flex-row md:items-center justify-between gap-2">
+              <h3 class="text-2xl font-bold text-slate-100">
+                Technical Systems & State Sync Series (Parts I–VII)
+              </h3>
+              <span class="mono text-xs px-2.5 py-1 rounded bg-slate-800 text-slate-300 border border-slate-700 w-fit">ESSAY SERIES</span>
+            </div>
+            <p class="text-slate-300 leading-relaxed">
+              A seven-part technical deep dive examining distributed transaction architecture, state synchronization trade-offs, performance bottlenecks in enterprise data tools, and explicit protocols over high-level abstractions.
+            </p>
+            
+            <!-- Expandable Essays Container -->
+            <div id="essays-list" class="hidden pt-4 border-t border-subtle/60 space-y-3 mono text-xs">
+              <div class="p-3 bg-slate-950 rounded border border-subtle flex justify-between items-center">
+                <span class="text-slate-200">Part I: State Boundary Abstractions in High-Concurrency Systems</span>
+                <span class="text-amber-500">Published</span>
+              </div>
+              <div class="p-3 bg-slate-950 rounded border border-subtle flex justify-between items-center">
+                <span class="text-slate-200">Part II: Consensus vs. Speed in Distributed Transaction Networks</span>
+                <span class="text-amber-500">Published</span>
+              </div>
+              <div class="p-3 bg-slate-950 rounded border border-subtle flex justify-between items-center">
+                <span class="text-slate-200">Part III: The Bottlenecks of Block-Based Storage Architecture</span>
+                <span class="text-amber-500">Published</span>
+              </div>
+              <div class="p-3 bg-slate-950 rounded border border-subtle flex justify-between items-center">
+                <span class="text-slate-200">Part IV–VI: Pipeline Determinism & Distributed Locks</span>
+                <span class="text-amber-500">Published</span>
+              </div>
+              <div class="p-3 bg-slate-950 rounded border border-subtle flex justify-between items-center">
+                <span class="text-slate-200">Part VII: Expert Routing Failure Protocols & Mitigation</span>
+                <span class="text-amber-500">Published (Final)</span>
+              </div>
+            </div>
+
+            <div class="pt-2 flex items-center justify-between text-xs mono">
+              <span class="text-slate-500">Status: Complete (Parts I–VII Released)</span>
+              <button id="toggle-essays-btn" onclick="toggleEssays()" class="text-amber-400 hover:text-amber-300 underline font-medium cursor-pointer">
+                Expand Essay Index &rarr;
+              </button>
+            </div>
+          </article>
+
+        </div>
+      </section>
+
+      <!-- Executive & Architectural Leadership -->
+      <section id="leadership" class="space-y-8 scroll-mt-12">
+        <div class="border-b border-subtle pb-4">
+          <h2 class="mono text-xs uppercase tracking-widest text-slate-500 font-bold">// Executive Leadership & Track Record</h2>
+        </div>
+
+        <div class="space-y-8">
+
+          <div class="p-8 rounded-xl bg-slate-900/30 border border-subtle space-y-4">
+            <div class="flex flex-col md:flex-row md:items-baseline justify-between gap-2">
+              <div>
+                <h3 class="text-xl font-bold text-slate-100">TokTok</h3>
+                <p class="text-amber-500 text-sm mono font-medium">Co-founder & Principal Architect</p>
+              </div>
+              <span class="mono text-xs text-slate-500">Jan 2025 – Dec 2025</span>
+            </div>
+            <ul class="list-disc list-inside text-slate-300 space-y-2 text-sm leading-relaxed">
+              <li>Architected core distributed transaction engines and data infrastructure for high-concurrency application platforms.</li>
+              <li>Engineered custom state management layers eliminating latency spikes across production datastores.</li>
+              <li>Established runtime selection criteria, type-safety enforcement, and structural pipeline definitions from zero to production.</li>
+            </ul>
+          </div>
+
+          <div class="p-8 rounded-xl bg-slate-900/30 border border-subtle space-y-4">
+            <div class="flex flex-col md:flex-row md:items-baseline justify-between gap-2">
+              <div>
+                <h3 class="text-xl font-bold text-slate-100">Commonwealth Labs</h3>
+                <p class="text-amber-500 text-sm mono font-medium">VP of Engineering</p>
+              </div>
+              <span class="mono text-xs text-slate-500">Nov 2022 – Sept 2024</span>
+            </div>
+            <ul class="list-disc list-inside text-slate-300 space-y-2 text-sm leading-relaxed">
+              <li>Directed technical architecture and engineering operations for decentralized governance and transaction protocols.</li>
+              <li>Scaled cross-functional engineering teams, enforcing rigorous type-checking, automated testing, and execution standards.</li>
+              <li>Overseered high-stakes protocol deployments managing multi-million dollar transaction volumes with zero safety incidents.</li>
+            </ul>
+          </div>
+
+        </div>
+      </section>
+
+      <!-- Ecosystem & Community Leadership -->
+      <section id="community" class="space-y-6 scroll-mt-12">
+        <div class="border-b border-subtle pb-4">
+          <h2 class="mono text-xs uppercase tracking-widest text-slate-500 font-bold">// Industry Community & Leadership</h2>
+        </div>
+        <div class="p-8 rounded-xl bg-slate-900/30 border border-subtle space-y-3">
+          <div class="flex justify-between items-baseline">
+            <h3 class="text-xl font-bold text-slate-100">CTO Lunch NYC</h3>
+            <span class="mono text-xs text-amber-500">ORGANIZER & CURATOR</span>
+          </div>
+          <p class="text-slate-300 text-sm leading-relaxed">
+            Organizer and host of CTO Lunch NYC, a monthly technical newsletter and curated gathering for working Chief Technology Officers, engineering executives, and principal architects in New York City. Focused on peer-level technical exchange around distributed systems, AI infrastructure, and organizational execution.
+          </p>
+        </div>
+      </section>
+
+      <!-- Technical Architecture & Execution Environment -->
+      <section id="stack" class="space-y-6 scroll-mt-12">
+        <div class="border-b border-subtle pb-4">
+          <h2 class="mono text-xs uppercase tracking-widest text-slate-500 font-bold">// Technical Execution Stack</h2>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mono text-xs">
+          
+          <div class="p-6 rounded-xl bg-slate-950 border border-subtle space-y-3">
+            <div class="text-amber-500 font-bold">// Core Architecture & Runtimes</div>
+            <ul class="space-y-2 text-slate-300">
+              <li><span class="text-slate-500">Primary Languages:</span> TypeScript, Python, Go</li>
+              <li><span class="text-slate-500">Execution Runtime:</span> Bun (Package Management, Scripts, Tooling)</li>
+              <li><span class="text-slate-500">Data Architecture:</span> Distributed Datastores, Relational Engines</li>
+              <li><span class="text-slate-500">Sync Primitives:</span> Custom Protocols, Transaction Queues</li>
+            </ul>
+          </div>
+
+          <div class="p-6 rounded-xl bg-slate-950 border border-subtle space-y-3">
+            <div class="text-amber-500 font-bold">// Application Infrastructure</div>
+            <ul class="space-y-2 text-slate-300">
+              <li><span class="text-slate-500">Framework Stack:</span> TanStack Ecosystem</li>
+              <li><span class="text-slate-500">Router / Data:</span> TanStack Start, TanStack Router, TanStack Query</li>
+              <li><span class="text-slate-500">Frontend Layer:</span> React, Type-safe UI Architectures</li>
+              <li><span class="text-slate-500">AI Frameworks:</span> Agent Orchestration, Custom Routing Engines</li>
+            </ul>
+          </div>
+
+        </div>
+      </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="pt-12 border-t border-subtle flex flex-col md:flex-row justify-between items-center text-xs mono text-slate-500 gap-4">
+      <div>
+        &copy; Forest Mars — All Rights Reserved.
+      </div>
+      <div class="flex gap-6">
+        <button data-scroll-to="community" class="hover:text-amber-400 transition-colors cursor-pointer">CTO Lunch NYC</button>
+        <button data-scroll-to="research" class="hover:text-amber-400 transition-colors cursor-pointer">Research Monograph</button>
+        <button data-scroll-to="research" class="hover:text-amber-400 transition-colors cursor-pointer">Essays I–VII</button>
+      </div>
+    </footer>
+
+  </div>
+
+  <!-- Interactive Modal for Monograph Detail -->
+  <div id="monograph-modal" class="fixed inset-0 bg-black/80 backdrop-blur-sm hidden items-center justify-center p-4 z-50">
+    <div class="bg-slate-900 border border-amber-500/40 p-8 rounded-xl max-w-2xl w-full space-y-6 shadow-2xl">
+      <div class="flex justify-between items-start">
+        <h4 class="text-xl font-bold text-slate-100">Transitive Expert Error and Routing Problems in Complex AI Systems</h4>
+        <button onclick="toggleModal('monograph-modal')" class="text-slate-400 hover:text-white mono text-sm">&times; CLOSE</button>
+      </div>
+      <p class="text-slate-300 text-sm leading-relaxed">
+        This research paper explores how routing mechanisms in multi-agent and Mixture-of-Experts (MoE) architectures propagate context errors. When early expert nodes introduce subtle hallucination or domain drift, downstream routers misclassify intent, creating compounding system-level failures.
+      </p>
+      <div class="bg-slate-950 p-4 rounded border border-subtle mono text-xs text-amber-400/90">
+        Key Focus: Structural error boundaries, routing verification protocols, and mitigation strategies for transitively failing agent nodes.
+      </div>
+      <div class="flex justify-end pt-2">
+        <button onclick="toggleModal('monograph-modal')" class="px-4 py-2 bg-amber-500 text-slate-950 font-semibold rounded text-xs mono hover:bg-amber-400 transition-colors">
+          Close Overview
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- JavaScript Handler Block -->
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      // Smooth scrolling for all trigger buttons
+      document.querySelectorAll('[data-scroll-to]').forEach(button => {
+        button.addEventListener('click', (e) => {
+          const targetId = e.currentTarget.getAttribute('data-scroll-to');
+          const targetElement = document.getElementById(targetId);
+          if (targetElement) {
+            targetElement.scrollIntoView({ behavior: 'smooth' });
+          }
+        });
+      });
+    });
+
+    // Expand / Collapse Essays Index
+    function toggleEssays() {
+      const list = document.getElementById('essays-list');
+      const btn = document.getElementById('toggle-essays-btn');
+      if (list.classList.contains('hidden')) {
+        list.classList.remove('hidden');
+        btn.innerHTML = 'Collapse Essay Index &uarr;';
+      } else {
+        list.classList.add('hidden');
+        btn.innerHTML = 'Expand Essay Index &rarr;';
+      }
+    }
+
+    // Modal Toggle
+    function toggleModal(modalId) {
+      const modal = document.getElementById(modalId);
+      if (modal.classList.contains('hidden')) {
+        modal.classList.remove('hidden');
+        modal.classList.add('flex');
+      } else {
+        modal.classList.add('hidden');
+        modal.classList.remove('flex');
+      }
+    }
+  </script>
+
+</body>
+</html>
