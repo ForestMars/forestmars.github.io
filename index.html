@@ -6,7 +6,7 @@
   <title>Forest Mars - Systems & AI Infrastructure</title>
   <script src="https://cdn.tailwindcss.com"></script>
   <style>
-    @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,300;0,400;0,500;0,700;1,400&family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;1,6..72,400&family=Inter:wght@300;400;500;600;700&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=JetBrains+Mono:ital,wght@0,300;0,400;0,500;0,700;1,400&family=Inter:wght@300;400;500;600;700&display=swap');
     
     :root {
       --bg: #090a0f;
@@ -22,11 +22,16 @@
     }
 
     .serif {
-      font-family: 'Newsreader', Georgia, serif;
+      font-family: 'Cormorant Garamond', Georgia, serif;
     }
 
     code, .mono {
       font-family: 'JetBrains Mono', monospace;
+    }
+
+    /* Aura / Glow moved to the email CTA container */
+    .cta-aura {
+      box-shadow: 0 0 40px rgba(245, 158, 11, 0.15), 0 0 80px rgba(255, 255, 255, 0.03);
     }
 
     /* Timeline spine tracking line */
@@ -102,7 +107,7 @@
         <span class="mono text-amber-500 text-xs font-semibold tracking-wider uppercase">Systems Architecture & Technical Execution</span>
         <h1 class="sr-only">Forest Mars</h1>
         <div class="py-2">
-          <img src="./assets/forestmars.png" alt="Forest Mars" class="h-16 md:h-24 w-auto object-contain drop-shadow-[0_0_25px_rgba(245,158,11,0.2)]">
+          <img src="./assets/forestmars.png" alt="Forest Mars" class="h-24 md:h-36 w-auto object-contain">
         </div>
       </div>
 
@@ -457,8 +462,8 @@
           </p>
         </div>
 
-        <!-- Obfuscated Email CTA Container -->
-        <div class="p-4 rounded-xl bg-slate-900/80 border border-amber-500/30 space-y-3">
+        <!-- Obfuscated Email CTA Container with Aura -->
+        <div class="p-4 rounded-xl bg-slate-900/80 border border-amber-500/30 space-y-3 cta-aura">
           <h4 class="font-bold text-amber-500 uppercase tracking-wider mono text-[11px]">Direct Contact</h4>
           <p class="text-slate-400 text-xs leading-relaxed">
             Architectural consultation, advisory, or emergency AI security response:
