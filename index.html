@@ -132,11 +132,11 @@
           </div>
         </div>
 
-        <!-- 3 Secondary Security Cards Grid -->
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-6 pt-2">
+        <!-- 3 Secondary Security Cards Grid (Strictly Aligned) -->
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6 pt-2 items-stretch">
 
           <!-- Card 1: The Incident Post-Mortem -->
-          <div class="p-6 rounded-2xl bg-slate-900/60 border border-slate-800 space-y-4 flex flex-col justify-between">
+          <div class="p-6 rounded-2xl bg-slate-900/60 border border-slate-800 flex flex-col justify-between h-full">
             <div class="space-y-3">
               <div>
                 <span class="mono text-[10px] uppercase text-slate-400 tracking-wider">CATALYST & POST-MORTEM</span>
@@ -146,13 +146,13 @@
                 The forensic post-mortem on the production agent breakout that inspired AIR-Kit's creation. Documents a multi-agent state cascade that breached execution guardrails, featuring the foundational 30/60/90 CTO Remediation Playbook—starting with Item #1: immediate containment and execution isolation.
               </p>
             </div>
-            <div class="pt-3 border-t border-slate-800/80">
-              <a href="https://ctolunchnyc.substack.com/i/208099023/cto-playbook-306090" target="_blank" rel="noopener noreferrer" class="mono text-xs text-amber-400 hover:underline">Incident Prevention Playbook &rarr;</a>
+            <div class="pt-3 border-t border-slate-800/80 mt-4">
+              <a href="https://ctolunchnyc.substack.com/i/208099023/cto-playbook-306090" target="_blank" rel="noopener noreferrer" class="mono text-[11px] text-amber-400 hover:underline block truncate">Incident Prevention Playbook &rarr;</a>
             </div>
           </div>
 
           <!-- Card 2: Felony Bench -->
-          <div class="p-4 rounded-2xl bg-slate-900/60 border border-slate-800 space-y-4 flex flex-col justify-between">
+          <div class="p-6 rounded-2xl bg-slate-900/60 border border-slate-800 flex flex-col justify-between h-full">
             <div class="space-y-3">
               <div>
                 <span class="mono text-[10px] uppercase text-slate-400 tracking-wider">EXPLOIT BENCHMARK</span>
@@ -162,13 +162,13 @@
                 Adversarial evaluation suite born directly out of the OpenAI lab escape and the subsequent public "bragging rights" contests that played out across media and major labs, with even Meta weighing in. Standardizes stress-testing against rogue execution loops, unauthorized side-effects, tool hijack vectors, and compliance boundaries.
               </p>
             </div>
-            <div class="pt-3 border-t border-slate-800/80">
-              <a href="https://github.com/MLOpsNYC/felonybench" target="_blank" rel="noopener noreferrer" class="mono text-xs text-amber-400 hover:underline block truncate">Adversarial Evaluation Framework &rarr;</a>
+            <div class="pt-3 border-t border-slate-800/80 mt-4">
+              <a href="https://github.com/MLOpsNYC/felonybench" target="_blank" rel="noopener noreferrer" class="mono text-[11px] text-amber-400 hover:underline block truncate">Adversarial Evaluation Framework &rarr;</a>
             </div>
           </div>
 
           <!-- Card 3: Shai-Hulud Attack -->
-          <div class="p-6 rounded-2xl bg-slate-900/60 border border-slate-800 space-y-4 flex flex-col justify-between">
+          <div class="p-6 rounded-2xl bg-slate-900/60 border border-slate-800 flex flex-col justify-between h-full">
             <div class="space-y-3">
               <div>
                 <span class="mono text-[10px] uppercase text-slate-400 tracking-wider">SUPPLY CHAIN ANALYSIS</span>
@@ -178,8 +178,8 @@
                 Deep dive into the self-propagating worm that infected the npm registry. Analyzes the payload mechanics, secret harvesting via TruffleHog, and the core operational lesson: cryptographic provenance answers who built a package, but says nothing about what the code actually executes at install time.
               </p>
             </div>
-            <div class="pt-3 border-t border-slate-800/80">
-              <a href="https://ctolunchnyc.substack.com/p/the-latest-software-supply-chain" target="_blank" rel="noopener noreferrer" class="mono text-xs text-amber-400 hover:underline">Read Full Analysis &rarr;</a>
+            <div class="pt-3 border-t border-slate-800/80 mt-4">
+              <a href="https://ctolunchnyc.substack.com/p/the-latest-software-supply-chain" target="_blank" rel="noopener noreferrer" class="mono text-[11px] text-amber-400 hover:underline block truncate">Read Full Analysis &rarr;</a>
             </div>
           </div>
 
@@ -199,10 +199,10 @@
         </div>
 
         <!-- 3 Primary Cards Grid -->
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-4 items-stretch">
           
           <!-- Card 1: Transitive Expert Error -->
-          <div class="p-5 rounded-xl bg-slate-900/40 border border-slate-800 space-y-4 flex flex-col justify-between">
+          <div class="p-5 rounded-xl bg-slate-900/40 border border-slate-800 flex flex-col justify-between h-full">
             <div class="space-y-2">
               <span class="mono text-[10px] text-slate-500 font-semibold uppercase tracking-wider">ROUTING DYNAMICS</span>
               <h3 class="font-bold text-slate-200 text-base">Transitive Expert Error</h3>
@@ -210,13 +210,13 @@
                 Formal mathematical and empirical research modeling error propagation cascades, routing failure modes, and boundary collapse across multi-agent topologies. Supported by open archival datasets on Zenodo.
               </p>
             </div>
-            <div class="pt-3 border-t border-slate-800/80">
-              <span class="mono text-[10px] text-amber-500">arXiv:2601.04416</span>
+            <div class="pt-3 border-t border-slate-800/80 mt-4">
+              <a href="https://arxiv.org/abs/2601.04416" target="_blank" rel="noopener noreferrer" class="mono text-[10px] text-amber-500 hover:underline block truncate">arXiv:2601.04416 &rarr;</a>
             </div>
           </div>
 
           <!-- Card 2: Eventual Coherence -->
-          <div class="p-5 rounded-xl bg-slate-900/40 border border-slate-800 space-y-4 flex flex-col justify-between">
+          <div class="p-5 rounded-xl bg-slate-900/40 border border-slate-800 flex flex-col justify-between h-full">
             <div class="space-y-2">
               <span class="mono text-[10px] text-slate-500 font-semibold uppercase tracking-wider">DISTRIBUTED STATE</span>
               <h3 class="font-bold text-slate-200 text-base">Eventual Coherence</h3>
@@ -224,13 +224,13 @@
                 Architectural strategies for maintaining state convergence and memory integrity across async agent pipelines operating under network partitions, latency spikes, and non-deterministic model responses.
               </p>
             </div>
-            <div class="pt-3 border-t border-slate-800/80">
-              <a href="https://doi.org/10.5281/zenodo.21349453" target="_blank" rel="noopener noreferrer" class="mono text-[10px] text-amber-500 hover:underline">DOI: 10.5281/zenodo.21349453 &rarr;</a>
+            <div class="pt-3 border-t border-slate-800/80 mt-4">
+              <a href="https://doi.org/10.5281/zenodo.21349453" target="_blank" rel="noopener noreferrer" class="mono text-[10px] text-amber-500 hover:underline block truncate">DOI: 10.5281/zenodo.21349453 &rarr;</a>
             </div>
           </div>
 
           <!-- Card 3: Build AI -->
-          <div class="p-5 rounded-xl bg-slate-900/40 border border-slate-800 space-y-4 flex flex-col justify-between">
+          <div class="p-5 rounded-xl bg-slate-900/40 border border-slate-800 flex flex-col justify-between h-full">
             <div class="space-y-2">
               <span class="mono text-[10px] text-slate-500 font-semibold uppercase tracking-wider">CURRICULUM</span>
               <h3 class="font-bold text-slate-200 text-base">Build AI</h3>
@@ -238,18 +238,18 @@
                 Primary publication engine dissecting production AI runtimes, hardware orchestration, context allocation tradeoffs, and the realities of shipping agentic software into live enterprise environments.
               </p>
             </div>
-            <div class="pt-3 border-t border-slate-800/80">
-              <a href="https://buildai.substack.com" target="_blank" rel="noopener noreferrer" class="mono text-xs text-amber-400 hover:underline">Learn more &rarr;</a>
+            <div class="pt-3 border-t border-slate-800/80 mt-4">
+              <a href="https://buildai.substack.com" target="_blank" rel="noopener noreferrer" class="mono text-xs text-amber-400 hover:underline block truncate">Learn more &rarr;</a>
             </div>
           </div>
 
         </div>
 
-        <!-- Subsection: Protocol Vulnerabilities & Telemetry Architecture -->
+        <!-- Subsection: Protocol Analysis & Telemetry Architecture -->
         <div class="p-6 rounded-xl bg-slate-900/20 border border-slate-800/80 space-y-4">
           <div class="space-y-1">
             <span class="mono text-[10px] text-amber-500 font-semibold tracking-wider uppercase">SUBSECTION &mdash; PROTOCOL & INSPECTION LAYERS</span>
-            <h3 class="text-xl font-bold text-slate-200">Protocol Vulnerabilities & Telemetry Architecture</h3>
+            <h3 class="text-xl font-bold text-slate-200">Protocol Analysis & Telemetry Architecture</h3>
           </div>
 
           <div class="grid grid-cols-1 md:grid-cols-2 gap-4 pt-2">
@@ -289,25 +289,25 @@
           </p>
         </div>
 
-        <!-- 3 Cards -->
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-4 pt-2">
+        <!-- 3 Cards Grid (Top Aligned Headings & Paragraphs) -->
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-4 pt-2 items-stretch">
           
-          <div class="p-5 rounded-xl bg-slate-900/40 border border-slate-800 space-y-2">
-            <h3 class="font-bold text-slate-200">CTO Lunch NYC</h3>
+          <div class="p-5 rounded-xl bg-slate-900/40 border border-slate-800 flex flex-col justify-start h-full space-y-2">
+            <h3 class="font-bold text-slate-200 text-base h-7 flex items-center">CTO Lunch NYC</h3>
             <p class="text-xs text-slate-400 leading-relaxed">
               Invitation-only network and monthly publication for executive engineering leaders in NYC. Focused on real-world infrastructure tradeoffs, organizational scale, and technical security without marketing fluff.
             </p>
           </div>
 
-          <div class="p-5 rounded-xl bg-slate-900/40 border border-slate-800 space-y-2">
-            <h3 class="font-bold text-slate-200">OpenCamps</h3>
+          <div class="p-5 rounded-xl bg-slate-900/40 border border-slate-800 flex flex-col justify-start h-full space-y-2">
+            <h3 class="font-bold text-slate-200 text-base h-7 flex items-center">OpenCamps</h3>
             <p class="text-xs text-slate-400 leading-relaxed">
               Co-founded and scaled the premier open-source event series of its era—becoming the largest event in open source history—bringing together maintainers, enterprise architects, and communities across verticals including AI.camp, my personal favorite.
             </p>
           </div>
 
-          <div class="p-5 rounded-xl bg-slate-900/40 border border-slate-800 space-y-2">
-            <h3 class="font-bold text-slate-200">United Nations Hackathon</h3>
+          <div class="p-5 rounded-xl bg-slate-900/40 border border-slate-800 flex flex-col justify-start h-full space-y-2">
+            <h3 class="font-bold text-slate-200 text-base h-7 flex items-center">United Nations Hackathon</h3>
             <p class="text-xs text-slate-400 leading-relaxed">
               Pioneered and executed the first official hackathon inside UN headquarters, navigating international governance to enable rapid technical execution under complex institutional constraints.
             </p>
@@ -374,15 +374,13 @@
           </p>
         </div>
 
-        <!-- Nested Primary CTA Card -->
+        <!-- Obfuscated Email CTA Container -->
         <div class="p-4 rounded-xl bg-slate-900/80 border border-amber-500/30 space-y-3">
           <h4 class="font-bold text-amber-500 uppercase tracking-wider mono text-[11px]">Direct Contact</h4>
           <p class="text-slate-400 text-xs leading-relaxed">
             Architectural consultation, advisory, or emergency AI security response:
           </p>
-          <a href="mailto:mars@mlops.nyc" class="inline-block mono text-xs px-3 py-1.5 rounded bg-amber-500/10 text-amber-400 border border-amber-500/40 hover:bg-amber-500/20 transition-all font-semibold">
-            mars@mlops.nyc &rarr;
-          </a>
+          <div id="cta-email-container"></div>
         </div>
 
         <div class="space-y-2">
@@ -404,6 +402,23 @@
     </footer>
 
   </div>
+
+  <!-- Email Obfuscation Script -->
+  <script>
+    (function() {
+      var user = "mars";
+      var domain = "mlops.nyc";
+      var addr = user + "@" + domain;
+      var container = document.getElementById("cta-email-container");
+      if (container) {
+        var a = document.createElement("a");
+        a.href = "mailto:" + addr;
+        a.className = "inline-block mono text-xs px-3 py-1.5 rounded bg-amber-500/10 text-amber-400 border border-amber-500/40 hover:bg-amber-500/20 transition-all font-semibold";
+        a.innerHTML = addr + " &rarr;";
+        container.appendChild(a);
+      }
+    })();
+  </script>
 
 </body>
 </html>
