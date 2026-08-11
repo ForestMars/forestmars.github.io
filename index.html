@@ -34,6 +34,28 @@
       box-shadow: 0 0 40px rgba(245, 158, 11, 0.15), 0 0 80px rgba(255, 255, 255, 0.03);
     }
 
+    .card-hover-aura {
+      transition: box-shadow 0.3s ease, border-color 0.3s ease;
+    }
+    .card-hover-aura:hover {
+      box-shadow: 0 0 40px rgba(245, 158, 11, 0.15), 0 0 80px rgba(255, 255, 255, 0.03);
+      border-color: rgba(245, 158, 11, 0.4);
+    }
+
+    /* Automatically apply the aura and border highlight to all card elements */
+      div[class*="rounded-xl"], 
+      div[class*="rounded-2xl"] {
+    transition: box-shadow 0.3s ease, border-color 0.3s ease;
+    }
+
+    div[class*="rounded-xl"]:hover, 
+    div[class*="rounded-2xl"]:hover {
+      box-shadow: 0 0 40px rgba(245, 158, 11, 0.15), 0 0 80px rgba(255, 255, 255, 0.03);
+      border-color: rgba(245, 158, 11, 0.4);
+    }
+
+
+
     /* Timeline spine tracking line */
     .timeline-spine {
       position: absolute;
