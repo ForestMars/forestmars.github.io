@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Forest Mars — Systems Architect & Executive Engineering Leader</title>
+  <title>Forest Mars — Systems Architect & AI Infrastructure Leader</title>
   <script src="https://cdn.tailwindcss.com"></script>
   <style>
     @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,300;0,400;0,500;0,700;1,400&family=Inter:wght@300;400;500;600;700&display=swap');
@@ -32,200 +32,270 @@
 </head>
 <body class="min-h-screen flex flex-col justify-between selection:bg-amber-500/30 selection:text-amber-200">
 
-  <div class="max-w-5xl mx-auto px-6 py-12 md:py-20 w-full space-y-20">
+  <div class="max-w-5xl mx-auto px-6 py-12 md:py-20 w-full space-y-16">
 
-    <!-- Pillar 1: Hero & Core Manifesto -->
+    <!-- Hero / Header -->
     <header class="space-y-8 border-b border-subtle pb-12">
       <div class="flex flex-col md:flex-row md:items-baseline justify-between gap-4">
         <div>
           <h1 class="text-4xl md:text-6xl font-extrabold tracking-tight text-slate-100">Forest Mars</h1>
-          <p class="mono text-amber-500 text-sm mt-2 font-medium tracking-wide">SYSTEMS ARCHITECT // EXECUTIVE ENGINEERING LEADER</p>
+          <p class="mono text-amber-500 text-sm mt-2 font-medium tracking-wide">SYSTEMS ARCHITECT // AI INFRASTRUCTURE & SECURITY</p>
         </div>
         <div class="mono text-xs text-slate-500 text-left md:text-right space-y-1">
           <div>LOC: NEW YORK, NY</div>
-          <div>FOCUS: DISTRIBUTED SYSTEMS & AI TOPOLOGIES</div>
+          <div>FOCUS: DEFENSIVE AI & DISTRIBUTED TOPOLOGIES</div>
         </div>
       </div>
 
       <p class="text-xl md:text-2xl text-slate-300 font-light leading-relaxed max-w-3xl">
-        Architecting high-throughput state synchronization, agentic protocols, and non-deterministic execution layers. Scale operator across global open source initiatives, AI platforms, and executive engineering networks.
+        Architecting defensive execution layers, operational AI security remediation, agentic routing theory, and resilient distributed systems.
       </p>
 
-      <div class="flex flex-wrap gap-3 text-xs mono pt-2">
-        <button data-scroll-to="theory" class="px-3 py-1.5 rounded bg-amber-500/10 border border-amber-500/30 text-amber-400 hover:bg-amber-500/20 transition-colors cursor-pointer text-left">
-          Eventual Coherence
+      <!-- Navigation / Section Triggers -->
+      <div class="flex flex-wrap gap-2 text-xs mono pt-2">
+        <button data-scroll-to="security" class="px-3 py-1.5 rounded bg-amber-500/10 border border-amber-500/30 text-amber-400 hover:bg-amber-500/20 transition-colors cursor-pointer text-left">
+          1. AI Security, Remediation & Evals
         </button>
-        <button data-scroll-to="theory" class="px-3 py-1.5 rounded bg-slate-900 border border-subtle text-slate-400 hover:border-slate-600 hover:text-slate-200 transition-colors cursor-pointer text-left">
-          Transitive Expert Error
+        <button data-scroll-to="architecture" class="px-3 py-1.5 rounded bg-slate-900 border border-subtle text-slate-400 hover:border-slate-600 hover:text-slate-200 transition-colors cursor-pointer text-left">
+          2. Agentic & Distributed Systems
         </button>
-        <button data-scroll-to="platforms" class="px-3 py-1.5 rounded bg-slate-900 border border-subtle text-slate-400 hover:border-slate-600 hover:text-slate-200 transition-colors cursor-pointer text-left">
-          Build AI
+        <button data-scroll-to="protocols" class="px-3 py-1.5 rounded bg-slate-900 border border-subtle text-slate-400 hover:border-slate-600 hover:text-slate-200 transition-colors cursor-pointer text-left">
+          3. Agentic Protocols & MCP
         </button>
-        <button data-scroll-to="impact" class="px-3 py-1.5 rounded bg-slate-900 border border-subtle text-slate-400 hover:border-slate-600 hover:text-slate-200 transition-colors cursor-pointer text-left">
-          UN Hackathon & OpenCamps
+        <button data-scroll-to="publications" class="px-3 py-1.5 rounded bg-slate-900 border border-subtle text-slate-400 hover:border-slate-600 hover:text-slate-200 transition-colors cursor-pointer text-left">
+          4. Publications & Network
         </button>
-        <button data-scroll-to="platforms" class="px-3 py-1.5 rounded bg-slate-900 border border-subtle text-slate-400 hover:border-slate-600 hover:text-slate-200 transition-colors cursor-pointer text-left">
-          CTO Lunch NYC
+        <button data-scroll-to="institutional" class="px-3 py-1.5 rounded bg-slate-900 border border-subtle text-slate-400 hover:border-slate-600 hover:text-slate-200 transition-colors cursor-pointer text-left">
+          5. Institutional Scale
+        </button>
+        <button data-scroll-to="antipatterns" class="px-3 py-1.5 rounded bg-slate-900 border border-subtle text-slate-400 hover:border-slate-600 hover:text-slate-200 transition-colors cursor-pointer text-left">
+          6. System Anti-Patterns
         </button>
       </div>
     </header>
 
-    <main class="space-y-20">
+    <main class="space-y-16">
 
-      <!-- Core Architectural Position -->
-      <section class="space-y-6">
-        <div class="mono text-xs uppercase tracking-widest text-slate-500 font-bold">// Core Architectural Position</div>
-        <div class="bg-slate-900/40 border border-subtle p-8 rounded-xl space-y-4 text-slate-300 leading-relaxed text-lg font-light">
-          <p>
-            Enterprise systems fail when state boundary abstractions are misaligned with execution realities. Standard ORMs, block-based state hacks, and monolithic sync engines collapse when subjected to distributed scale or agentic non-determinism.
-          </p>
-          <p>
-            Building resilient infrastructure requires explicit state synchronization protocols, deterministic message pipelines, and runtime design aligned directly with execution limits—whether executing high-concurrency transaction networks or orchestrating multi-agent routing topologies.
-          </p>
+      <!-- 1. AI Security, Remediation & Evals (The Defense Layer) -->
+      <section id="security" class="space-y-6 scroll-mt-12">
+        <div class="flex justify-between items-baseline border-b border-subtle pb-4">
+          <h2 class="mono text-xs uppercase tracking-widest text-slate-500 font-bold">// 1. AI Security, Remediation & Evals (The Defense Layer)</h2>
+          <span class="mono text-xs text-amber-500">DEFENSIVE EXECUTION</span>
+        </div>
+
+        <p class="text-slate-400 text-sm">
+          Operational security infrastructure, agentic risk benchmarks, and defensive execution frameworks.
+        </p>
+
+        <div class="grid grid-cols-1 gap-6">
+
+          <!-- AIR-Kit & Code -->
+          <div class="p-8 rounded-xl bg-slate-900/60 border border-amber-500/40 hover:border-amber-500/70 transition-all space-y-4">
+            <div class="flex flex-col md:flex-row md:items-center justify-between gap-4">
+              <div>
+                <h3 class="text-2xl font-bold text-slate-100 flex items-center gap-3">
+                  AIR-Kit
+                  <a href="https://air-kit.tech" target="_blank" rel="noopener noreferrer" class="text-xs mono px-2.5 py-0.5 rounded bg-amber-500/20 text-amber-300 border border-amber-500/40 hover:bg-amber-500/30">air-kit.tech &rarr;</a>
+                </h3>
+                <p class="text-amber-500 text-xs mono mt-1">Security and remediation platform</p>
+              </div>
+              <a href="https://github.com/AIR-Kit-AI/AIR-Kit" target="_blank" rel="noopener noreferrer" class="mono text-xs px-3.5 py-2 rounded bg-slate-800 text-slate-200 border border-slate-700 hover:border-amber-500/50 hover:text-amber-300 w-fit">
+                github.com/AIR-Kit-AI/AIR-Kit &rarr;
+              </a>
+            </div>
+            <p class="text-slate-300 text-sm leading-relaxed">
+              Security and remediation platform providing the operational step 1 for incident mitigation and containment. Includes core open-source platform codebase and runtime reference implementations.
+            </p>
+          </div>
+
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+
+            <!-- felonybench -->
+            <div class="p-6 rounded-xl bg-slate-900/30 border border-subtle space-y-3 flex flex-col justify-between">
+              <div class="space-y-2">
+                <div class="flex justify-between items-baseline">
+                  <h3 class="text-lg font-bold text-slate-100">felonybench</h3>
+                  <span class="mono text-xs text-slate-500">GitHub</span>
+                </div>
+                <p class="text-slate-300 text-sm leading-relaxed">
+                  Benchmarking agentic failure modes, unauthorized actions, and security compliance.
+                </p>
+              </div>
+              <div class="mono text-xs text-amber-500/90 pt-3 border-t border-subtle/50">
+                Agentic risk evaluation & compliance boundary testing
+              </div>
+            </div>
+
+            <!-- Software Supply Chain & Playbooks -->
+            <div class="p-6 rounded-xl bg-slate-900/30 border border-subtle space-y-3 flex flex-col justify-between">
+              <div class="space-y-2">
+                <h3 class="text-lg font-bold text-slate-100">The Software Supply Chain & Playbooks</h3>
+                <p class="text-slate-300 text-sm leading-relaxed">
+                  <em>The Latest Software Supply Chain</em> & <em>The Lost Weekend</em> (featuring the 30/60/90 CTO Playbook).
+                </p>
+              </div>
+              <div class="mono text-xs text-amber-500/90 pt-3 border-t border-subtle/50">
+                Executive response protocols & supply chain remediation
+              </div>
+            </div>
+
+          </div>
+
         </div>
       </section>
 
-      <!-- Pillar 2: Architectural Frameworks & Core Theory -->
-      <section id="theory" class="space-y-8 scroll-mt-12">
+      <!-- 2. Agentic & Distributed Systems Architecture (The Core Science) -->
+      <section id="architecture" class="space-y-6 scroll-mt-12">
         <div class="flex justify-between items-baseline border-b border-subtle pb-4">
-          <h2 class="mono text-xs uppercase tracking-widest text-slate-500 font-bold">// Architectural Frameworks & Core Theory</h2>
-          <span class="mono text-xs text-amber-500">RESEARCH & MONOGRAPHS</span>
+          <h2 class="mono text-xs uppercase tracking-widest text-slate-500 font-bold">// 2. Agentic & Distributed Systems Architecture (The Core Science)</h2>
+          <span class="mono text-xs text-amber-500">THEORETICAL FOUNDATION</span>
         </div>
 
-        <div class="grid grid-cols-1 gap-8">
-          
-          <!-- Eventual Coherence -->
-          <article class="p-8 rounded-xl bg-slate-900/60 border border-amber-500/30 hover:border-amber-500/60 transition-all space-y-4 relative">
-            <div class="flex flex-col md:flex-row md:items-center justify-between gap-2">
-              <h3 class="text-2xl font-bold text-slate-100">
-                Eventual Coherence
-              </h3>
-              <span class="mono text-xs px-2.5 py-1 rounded bg-amber-500/20 text-amber-300 border border-amber-500/40 w-fit">RESEARCH FRAMEWORK</span>
-            </div>
-            <p class="text-slate-300 leading-relaxed">
-              An architectural framework addressing state synchronization in non-deterministic systems. Explores mechanisms for establishing deterministic coherence across loosely coupled agent pipelines, high-throughput datastores, and distributed state boundaries without introducing blocking locks or latency cascade failures.
-            </p>
-            <div class="pt-2 flex items-center justify-between text-xs mono">
-              <span class="text-slate-500">Domain: Distributed State Sync & Execution Primitives</span>
-              <button onclick="toggleModal('coherence-modal')" class="text-amber-400 hover:text-amber-300 underline font-medium cursor-pointer">
-                View Framework Details &rarr;
-              </button>
-            </div>
-          </article>
+        <p class="text-slate-400 text-sm">
+          Formal papers, routing research, and the theoretical foundation of distributed intelligence.
+        </p>
+
+        <div class="grid grid-cols-1 gap-6">
 
           <!-- Transitive Expert Error -->
-          <article class="p-8 rounded-xl bg-slate-900/30 border border-subtle hover:border-slate-700 transition-all space-y-4">
+          <article class="p-8 rounded-xl bg-slate-900/30 border border-subtle space-y-4">
             <div class="flex flex-col md:flex-row md:items-center justify-between gap-2">
-              <h3 class="text-2xl font-bold text-slate-100">
-                Transitive Expert Error and Routing Problems in Complex AI Systems
-              </h3>
-              <span class="mono text-xs px-2.5 py-1 rounded bg-slate-800 text-slate-300 border border-slate-700 w-fit">MONOGRAPH</span>
+              <div>
+                <h3 class="text-xl font-bold text-slate-100">
+                  Transitive Expert Error & Routing Problems in Complex AI Systems
+                </h3>
+                <p class="mono text-xs text-amber-500 mt-1">arXiv:2601.04416</p>
+              </div>
+              <span class="mono text-xs px-2.5 py-1 rounded bg-slate-800 text-slate-300 border border-slate-700 w-fit">RESEARCH PAPER</span>
             </div>
-            <p class="text-slate-300 leading-relaxed">
-              A structural breakdown investigating downstream context degradation, cascade failure modes, and non-deterministic routing vulnerabilities in multi-agent networks and Mixture-of-Experts (MoE) architectures. Defines error containment primitives for transitively failing routing nodes.
+            <p class="text-slate-300 text-sm leading-relaxed">
+              Research on routing failures and transitive expert error propagation in multi-agent setups.
             </p>
-            <div class="pt-2 flex items-center justify-between text-xs mono">
-              <span class="text-slate-500">Domain: AI Topology & Agentic Protocols</span>
-              <button onclick="toggleModal('expert-error-modal')" class="text-amber-400 hover:text-amber-300 underline font-medium cursor-pointer">
-                View Monograph Synopsis &rarr;
-              </button>
-            </div>
           </article>
 
-          <!-- Writing Series -->
-          <article class="p-8 rounded-xl bg-slate-900/30 border border-subtle hover:border-slate-700 transition-all space-y-4">
-            <div class="flex flex-col md:flex-row md:items-center justify-between gap-2">
-              <h3 class="text-2xl font-bold text-slate-100">
-                Technical Writing & Systems Series (Parts I–VII)
-              </h3>
-              <span class="mono text-xs px-2.5 py-1 rounded bg-slate-800 text-slate-300 border border-slate-700 w-fit">ESSAY SERIES</span>
-            </div>
-            <p class="text-slate-300 leading-relaxed">
-              A seven-part technical investigation covering state boundary abstractions, transaction protocols, performance limits of block-based data models, and deterministic orchestration in complex runtime environments.
-            </p>
-            
-            <div id="essays-list" class="hidden pt-4 border-t border-subtle/60 space-y-3 mono text-xs">
-              <div class="p-3 bg-slate-950 rounded border border-subtle flex justify-between items-center">
-                <span class="text-slate-200">Part I: State Boundary Abstractions in High-Concurrency Systems</span>
-                <span class="text-amber-500">Complete</span>
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+
+            <!-- Zenodo Record -->
+            <div class="p-6 rounded-xl bg-slate-900/30 border border-subtle space-y-3">
+              <div class="flex justify-between items-baseline">
+                <h3 class="text-lg font-bold text-slate-100">Zenodo Record 21349453</h3>
+                <span class="mono text-xs text-slate-500">RESEARCH DATASET</span>
               </div>
-              <div class="p-3 bg-slate-950 rounded border border-subtle flex justify-between items-center">
-                <span class="text-slate-200">Part II: Consensus vs. Speed in Distributed Transaction Networks</span>
-                <span class="text-amber-500">Complete</span>
-              </div>
-              <div class="p-3 bg-slate-950 rounded border border-subtle flex justify-between items-center">
-                <span class="text-slate-200">Part III: The Bottlenecks of Block-Based Storage Architecture</span>
-                <span class="text-amber-500">Complete</span>
-              </div>
-              <div class="p-3 bg-slate-950 rounded border border-subtle flex justify-between items-center">
-                <span class="text-slate-200">Part IV–VI: Pipeline Determinism & Distributed Locks</span>
-                <span class="text-amber-500">Complete</span>
-              </div>
-              <div class="p-3 bg-slate-950 rounded border border-subtle flex justify-between items-center">
-                <span class="text-slate-200">Part VII: Expert Routing Failure Protocols & Mitigation</span>
-                <span class="text-amber-500">Complete (Final)</span>
-              </div>
+              <p class="text-slate-300 text-sm leading-relaxed">
+                Archival dataset and research repository.
+              </p>
             </div>
 
-            <div class="pt-2 flex items-center justify-between text-xs mono">
-              <span class="text-slate-500">Status: Complete (Parts I–VII Released)</span>
-              <button id="toggle-essays-btn" onclick="toggleEssays()" class="text-amber-400 hover:text-amber-300 underline font-medium cursor-pointer">
-                Expand Essay Index &rarr;
-              </button>
+            <!-- Reasoning as a Span -->
+            <div class="p-6 rounded-xl bg-slate-900/30 border border-subtle space-y-3">
+              <div class="flex justify-between items-baseline">
+                <h3 class="text-lg font-bold text-slate-100">Reasoning as a Span</h3>
+                <span class="mono text-xs text-slate-500">TECHNICAL ANALYSIS</span>
+              </div>
+              <p class="text-slate-300 text-sm leading-relaxed">
+                Technical analysis on execution models, latency, and span-level tracing in reasoning models.
+              </p>
             </div>
-          </article>
+
+          </div>
 
         </div>
       </section>
 
-      <!-- Pillar 3: Executive Platforms & Initiatives -->
-      <section id="platforms" class="space-y-8 scroll-mt-12">
+      <!-- 3. Agentic Protocols, MCP & Observability (The Interface & Inspection Layer) -->
+      <section id="protocols" class="space-y-6 scroll-mt-12">
         <div class="border-b border-subtle pb-4">
-          <h2 class="mono text-xs uppercase tracking-widest text-slate-500 font-bold">// Executive Platforms & Initiatives</h2>
+          <h2 class="mono text-xs uppercase tracking-widest text-slate-500 font-bold">// 3. Agentic Protocols, MCP & Observability (The Interface & Inspection Layer)</h2>
         </div>
+
+        <p class="text-slate-400 text-sm">
+          Critiques and architectural analysis on agentic communication layers, protocol boundaries, and telemetry.
+        </p>
 
         <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
 
-          <!-- Build AI -->
+          <!-- Twilight of the MCP Idols -->
           <div class="p-8 rounded-xl bg-slate-900/30 border border-subtle space-y-4 flex flex-col justify-between">
             <div class="space-y-3">
               <div class="flex justify-between items-baseline">
-                <h3 class="text-xl font-bold text-slate-100">Build AI</h3>
-                <span class="mono text-xs text-amber-500">PLATFORM & INFRASTRUCTURE</span>
+                <h3 class="text-xl font-bold text-slate-100">Twilight of the MCP Idols</h3>
+                <span class="mono text-xs text-amber-500">ARCHITECTURAL CRITIQUE</span>
               </div>
               <p class="text-slate-300 text-sm leading-relaxed">
-                Platform initiative driving advanced AI engineering practices, agentic orchestration, and systems infrastructure for multi-model integration and production deployment.
+                A critical deconstruction of Model Context Protocol limits, agentic boundaries, and state management traps.
               </p>
             </div>
-            <div class="mono text-xs text-slate-500 pt-4 border-t border-subtle/50">
-              Focus: AI Infrastructure, Agent Systems & Tooling
+          </div>
+
+          <!-- Observability / Telemetry Anchor -->
+          <div class="p-8 rounded-xl bg-slate-900/30 border border-subtle space-y-4 flex flex-col justify-between">
+            <div class="space-y-3">
+              <div class="flex justify-between items-baseline">
+                <h3 class="text-xl font-bold text-slate-100">Observability & Telemetry</h3>
+                <span class="mono text-xs text-slate-500">RESERVED ANCHOR</span>
+              </div>
+              <p class="text-slate-300 text-sm leading-relaxed">
+                Reserved space for work on AI tracing, telemetry stacks, and agentic observability.
+              </p>
             </div>
           </div>
+
+        </div>
+      </section>
+
+      <!-- 4. Publications & Executive Network (The Platform) -->
+      <section id="publications" class="space-y-6 scroll-mt-12">
+        <div class="border-b border-subtle pb-4">
+          <h2 class="mono text-xs uppercase tracking-widest text-slate-500 font-bold">// 4. Publications & Executive Network (The Platform)</h2>
+        </div>
+
+        <p class="text-slate-400 text-sm">
+          Active commentary engines and local leadership hubs.
+        </p>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
 
           <!-- CTO Lunch NYC -->
           <div class="p-8 rounded-xl bg-slate-900/30 border border-subtle space-y-4 flex flex-col justify-between">
             <div class="space-y-3">
               <div class="flex justify-between items-baseline">
                 <h3 class="text-xl font-bold text-slate-100">CTO Lunch NYC</h3>
-                <span class="mono text-xs text-amber-500">EXECUTIVE NETWORK & PUBLICATION</span>
+                <span class="mono text-xs text-amber-500">EXECUTIVE NETWORK</span>
               </div>
               <p class="text-slate-300 text-sm leading-relaxed">
-                Organizer and curator of CTO Lunch NYC—a monthly technical newsletter and invite-only gathering for working Chief Technology Officers, VP Engineers, and principal architects in New York City.
+                Monthly technical publication and executive network for working CTOs and engineering leaders.
               </p>
             </div>
-            <div class="mono text-xs text-slate-500 pt-4 border-t border-subtle/50">
-              Focus: Peer Exchange, Technical Leadership & Architecture
+          </div>
+
+          <!-- Build AI Substack -->
+          <div class="p-8 rounded-xl bg-slate-900/30 border border-subtle space-y-4 flex flex-col justify-between">
+            <div class="space-y-3">
+              <div class="flex justify-between items-baseline">
+                <h3 class="text-xl font-bold text-slate-100">
+                  Build AI Substack
+                  <a href="https://buildai.substack.com" target="_blank" rel="noopener noreferrer" class="text-xs font-normal text-amber-400 hover:underline ml-2">buildai.substack.com &rarr;</a>
+                </h3>
+                <span class="mono text-xs text-amber-500">LONG-FORM ESSAYS</span>
+              </div>
+              <p class="text-slate-300 text-sm leading-relaxed">
+                Main engine for long-form essays on systems architecture, AI runtimes, and engineering execution.
+              </p>
             </div>
           </div>
 
         </div>
       </section>
 
-      <!-- Pillar 4: Open Source Scale & Global Impact -->
-      <section id="impact" class="space-y-8 scroll-mt-12">
+      <!-- 5. Institutional Scale & Ecosystem History (The Track Record) -->
+      <section id="institutional" class="space-y-6 scroll-mt-12">
         <div class="border-b border-subtle pb-4">
-          <h2 class="mono text-xs uppercase tracking-widest text-slate-500 font-bold">// Global Open Source Scale & Institutional Impact</h2>
+          <h2 class="mono text-xs uppercase tracking-widest text-slate-500 font-bold">// 5. Institutional Scale & Ecosystem History (The Track Record)</h2>
         </div>
+
+        <p class="text-slate-400 text-sm">
+          Global open-source community initiatives and institutional mobilization.
+        </p>
 
         <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
 
@@ -233,127 +303,70 @@
           <div class="p-8 rounded-xl bg-slate-900/30 border border-subtle space-y-4">
             <div class="flex justify-between items-baseline">
               <h3 class="text-xl font-bold text-slate-100">OpenCamps</h3>
-              <span class="mono text-xs text-amber-500">FOUNDER & CHAIR</span>
+              <span class="mono text-xs text-amber-500">CO-FOUNDER</span>
             </div>
             <p class="text-slate-300 text-sm leading-relaxed">
-              Organized and directed OpenCamps, the largest open-source event gathering in history. Brought together tens of thousands of developers, maintainers, and enterprise technology leaders across dozens of co-located technical conferences.
+              Co-founder of what was the largest open-source event conference of its time.
             </p>
-            <div class="mono text-xs text-slate-500 pt-2">
-              Scale: Thousands of attendees, multi-track global open source summit.
-            </div>
           </div>
 
           <!-- United Nations Hackathon -->
           <div class="p-8 rounded-xl bg-slate-900/30 border border-subtle space-y-4">
             <div class="flex justify-between items-baseline">
               <h3 class="text-xl font-bold text-slate-100">United Nations Hackathon</h3>
-              <span class="mono text-xs text-amber-500">DIRECTOR & ORGANIZER</span>
+              <span class="mono text-xs text-amber-500">ORGANIZER & LEAD</span>
             </div>
             <p class="text-slate-300 text-sm leading-relaxed">
-              Spearheaded and executed the United Nations' first-ever official open source hackathon. Convened global engineering teams to build open infrastructure and software solutions addressing international development goals and public goods.
+              Organized and led the first official hackathon hosted inside UN headquarters.
             </p>
-            <div class="mono text-xs text-slate-500 pt-2">
-              Milestone: First official global open source hackathon in UN history.
-            </div>
           </div>
 
         </div>
       </section>
 
-      <!-- Pillar 5: Technical Stack & Execution Environment -->
-      <section id="stack" class="space-y-6 scroll-mt-12">
+      <!-- 6. System Anti-Patterns & Engineering Hygiene (The Structural Layer) -->
+      <section id="antipatterns" class="space-y-6 scroll-mt-12">
         <div class="border-b border-subtle pb-4">
-          <h2 class="mono text-xs uppercase tracking-widest text-slate-500 font-bold">// Technical Execution Stack</h2>
+          <h2 class="mono text-xs uppercase tracking-widest text-slate-500 font-bold">// 6. System Anti-Patterns & Engineering Hygiene (The Structural Layer)</h2>
         </div>
 
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mono text-xs">
-          
-          <div class="p-6 rounded-xl bg-slate-950 border border-subtle space-y-3">
-            <div class="text-amber-500 font-bold">// Core Runtimes & Languages</div>
-            <ul class="space-y-2 text-slate-300">
-              <li><span class="text-slate-500">Primary Languages:</span> TypeScript, Python, Go</li>
-              <li><span class="text-slate-500">Execution Runtime:</span> Bun (Package Management, Execution)</li>
-              <li><span class="text-slate-500">Data Engines:</span> Distributed Datastores, Relational Engines</li>
-              <li><span class="text-slate-500">Sync Primitives:</span> Custom Protocols, State Sync Queues</li>
-            </ul>
-          </div>
+        <p class="text-slate-400 text-sm">
+          Dedicated to structural failure modes and code quality across application layers.
+        </p>
 
-          <div class="p-6 rounded-xl bg-slate-950 border border-subtle space-y-3">
-            <div class="text-amber-500 font-bold">// Application Infrastructure</div>
-            <ul class="space-y-2 text-slate-300">
-              <li><span class="text-slate-500">Framework Stack:</span> TanStack Ecosystem</li>
-              <li><span class="text-slate-500">Router / Data:</span> TanStack Start, TanStack Router, TanStack Query</li>
-              <li><span class="text-slate-500">Frontend Layer:</span> React, Type-safe UI Architectures</li>
-              <li><span class="text-slate-500">AI Frameworks:</span> TanStack AI, Custom Routing Orchestrators</li>
-            </ul>
+        <div class="p-8 rounded-xl bg-slate-900/30 border border-subtle space-y-4">
+          <div class="flex justify-between items-baseline">
+            <h3 class="text-xl font-bold text-slate-100">
+              React Anti-Patterns
+              <a href="https://reactantipatterns.com" target="_blank" rel="noopener noreferrer" class="text-xs font-normal text-amber-400 hover:underline ml-2">reactantipatterns.com &rarr;</a>
+            </h3>
+            <span class="mono text-xs text-amber-500">STRUCTURAL HYGIENE</span>
           </div>
-
+          <p class="text-slate-300 text-sm leading-relaxed">
+            Architectural failure modes and structural best practices in application development.
+          </p>
         </div>
       </section>
 
     </main>
 
-    <!-- Pillar 6: Interactive Content Index & Footer -->
+    <!-- Footer -->
     <footer class="pt-12 border-t border-subtle flex flex-col md:flex-row justify-between items-center text-xs mono text-slate-500 gap-4">
       <div>
         &copy; Forest Mars — All Rights Reserved.
       </div>
       <div class="flex flex-wrap gap-6">
-        <button data-scroll-to="theory" class="hover:text-amber-400 transition-colors cursor-pointer">Eventual Coherence</button>
-        <button data-scroll-to="platforms" class="hover:text-amber-400 transition-colors cursor-pointer">Build AI</button>
-        <button data-scroll-to="platforms" class="hover:text-amber-400 transition-colors cursor-pointer">CTO Lunch NYC</button>
-        <button data-scroll-to="impact" class="hover:text-amber-400 transition-colors cursor-pointer">OpenCamps & UN</button>
+        <a href="https://air-kit.tech" target="_blank" rel="noopener noreferrer" class="hover:text-amber-400 transition-colors">AIR-Kit</a>
+        <a href="https://github.com/AIR-Kit-AI/AIR-Kit" target="_blank" rel="noopener noreferrer" class="hover:text-amber-400 transition-colors">AIR-Kit Code</a>
+        <a href="https://buildai.substack.com" target="_blank" rel="noopener noreferrer" class="hover:text-amber-400 transition-colors">Build AI Substack</a>
+        <a href="https://reactantipatterns.com" target="_blank" rel="noopener noreferrer" class="hover:text-amber-400 transition-colors">reactantipatterns.com</a>
       </div>
     </footer>
 
   </div>
 
-  <!-- Modal: Eventual Coherence -->
-  <div id="coherence-modal" class="fixed inset-0 bg-black/80 backdrop-blur-sm hidden items-center justify-center p-4 z-50">
-    <div class="bg-slate-900 border border-amber-500/40 p-8 rounded-xl max-w-2xl w-full space-y-6 shadow-2xl">
-      <div class="flex justify-between items-start">
-        <h4 class="text-xl font-bold text-slate-100">Eventual Coherence — Research Overview</h4>
-        <button onclick="toggleModal('coherence-modal')" class="text-slate-400 hover:text-white mono text-sm cursor-pointer">&times; CLOSE</button>
-      </div>
-      <p class="text-slate-300 text-sm leading-relaxed">
-        Eventual Coherence provides a formal structure for managing state boundaries in distributed systems where traditional consensus protocols create latency bottlenecks or operational failures.
-      </p>
-      <div class="bg-slate-950 p-4 rounded border border-subtle mono text-xs text-amber-400/90">
-        Key Focus: Deterministic state alignment, non-blocking execution pipelines, and boundary abstractions for multi-agent workflows.
-      </div>
-      <div class="flex justify-end pt-2">
-        <button onclick="toggleModal('coherence-modal')" class="px-4 py-2 bg-amber-500 text-slate-950 font-semibold rounded text-xs mono hover:bg-amber-400 transition-colors cursor-pointer">
-          Close Overview
-        </button>
-      </div>
-    </div>
-  </div>
-
-  <!-- Modal: Transitive Expert Error -->
-  <div id="expert-error-modal" class="fixed inset-0 bg-black/80 backdrop-blur-sm hidden items-center justify-center p-4 z-50">
-    <div class="bg-slate-900 border border-amber-500/40 p-8 rounded-xl max-w-2xl w-full space-y-6 shadow-2xl">
-      <div class="flex justify-between items-start">
-        <h4 class="text-xl font-bold text-slate-100">Transitive Expert Error and Routing Problems in Complex AI Systems</h4>
-        <button onclick="toggleModal('expert-error-modal')" class="text-slate-400 hover:text-white mono text-sm cursor-pointer">&times; CLOSE</button>
-      </div>
-      <p class="text-slate-300 text-sm leading-relaxed">
-        This monograph examines how error compounds transitively across routing boundaries in Mixture-of-Experts (MoE) and multi-agent topologies. When upstream routers misclassify intent, context degradation propagates downstream, leading to systemic failure.
-      </p>
-      <div class="bg-slate-950 p-4 rounded border border-subtle mono text-xs text-amber-400/90">
-        Key Focus: Structural error containment, routing verification protocols, and mitigation strategies for agentic networks.
-      </div>
-      <div class="flex justify-end pt-2">
-        <button onclick="toggleModal('expert-error-modal')" class="px-4 py-2 bg-amber-500 text-slate-950 font-semibold rounded text-xs mono hover:bg-amber-400 transition-colors cursor-pointer">
-          Close Overview
-        </button>
-      </div>
-    </div>
-  </div>
-
-  <!-- JavaScript Handler Block -->
   <script>
     document.addEventListener('DOMContentLoaded', () => {
-      // Smooth scrolling for jump triggers
       document.querySelectorAll('[data-scroll-to]').forEach(button => {
         button.addEventListener('click', (e) => {
           const targetId = e.currentTarget.getAttribute('data-scroll-to');
@@ -364,31 +377,6 @@
         });
       });
     });
-
-    // Toggle Essay Index
-    function toggleEssays() {
-      const list = document.getElementById('essays-list');
-      const btn = document.getElementById('toggle-essays-btn');
-      if (list.classList.contains('hidden')) {
-        list.classList.remove('hidden');
-        btn.innerHTML = 'Collapse Essay Index &uarr;';
-      } else {
-        list.classList.add('hidden');
-        btn.innerHTML = 'Expand Essay Index &rarr;';
-      }
-    }
-
-    // Toggle Modal
-    function toggleModal(modalId) {
-      const modal = document.getElementById(modalId);
-      if (modal.classList.contains('hidden')) {
-        modal.classList.remove('hidden');
-        modal.classList.add('flex');
-      } else {
-        modal.classList.add('hidden');
-        modal.classList.remove('flex');
-      }
-    }
   </script>
 
 </body>
