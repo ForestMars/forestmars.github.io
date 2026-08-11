@@ -62,7 +62,7 @@
 
       <div class="text-slate-400 text-base leading-relaxed max-w-2xl font-light space-y-4">
         <p>
-          Architecture isn't an abstract exercise in whiteboarding—it's the discipline of surviving contact with reality. Starting from real-time security remediation layers for non-deterministic multi-agent systems down to foundational protocol design, formal routing theory, and executive developer leadership.
+          Architecture is the discipline of surviving contact with reality. Starting from real-time security remediation layers for non-deterministic multi-agent systems down to foundational protocol design, formal routing theory, and executive developer leadership.
         </p>
       </div>
     </header>
@@ -147,12 +147,12 @@
               </p>
             </div>
             <div class="pt-3 border-t border-slate-800/80">
-              <span class="mono text-[10px] text-slate-500">Incident Recovery & Guardrail Blueprint</span>
+              <a href="https://ctolunchnyc.substack.com/i/208099023/cto-playbook-306090" target="_blank" rel="noopener noreferrer" class="mono text-xs text-amber-400 hover:underline">Incident Prevention Playbook &rarr;</a>
             </div>
           </div>
 
           <!-- Card 2: Felony Bench -->
-          <div class="p-6 rounded-2xl bg-slate-900/60 border border-slate-800 space-y-4 flex flex-col justify-between">
+          <div class="p-4 rounded-2xl bg-slate-900/60 border border-slate-800 space-y-4 flex flex-col justify-between">
             <div class="space-y-3">
               <div>
                 <span class="mono text-[10px] uppercase text-slate-400 tracking-wider">EXPLOIT BENCHMARK</span>
@@ -163,16 +163,16 @@
               </p>
             </div>
             <div class="pt-3 border-t border-slate-800/80">
-              <span class="mono text-[10px] text-slate-500">Adversarial Evaluation Framework</span>
+              <a href="https://github.com/MLOpsNYC/felonybench" target="_blank" rel="noopener noreferrer" class="mono text-xs text-amber-400 hover:underline block truncate">Adversarial Evaluation Framework &rarr;</a>
             </div>
           </div>
 
-          <!-- Card 3: The Shai-Hulud Attack -->
+          <!-- Card 3: Shai-Hulud Attack -->
           <div class="p-6 rounded-2xl bg-slate-900/60 border border-slate-800 space-y-4 flex flex-col justify-between">
             <div class="space-y-3">
               <div>
-                <span class="mono text-[10px] uppercase text-amber-500/80 tracking-wider">SUPPLY CHAIN ANALYSIS</span>
-                <h3 class="text-xl font-bold text-slate-100 mt-0.5">The Shai-Hulud Attack</h3>
+                <span class="mono text-[10px] uppercase text-slate-400 tracking-wider">SUPPLY CHAIN ANALYSIS</span>
+                <h3 class="text-xl font-bold text-slate-100 mt-0.5">Shai-Hulud Attack</h3>
               </div>
               <p class="text-xs text-slate-300 leading-relaxed">
                 Deep dive into the self-propagating worm that infected the npm registry. Analyzes the payload mechanics, secret harvesting via TruffleHog, and the core operational lesson: cryptographic provenance answers who built a package, but says nothing about what the code actually executes at install time.
@@ -225,7 +225,7 @@
               </p>
             </div>
             <div class="pt-3 border-t border-slate-800/80">
-              <span class="mono text-[10px] text-slate-500">DOI: 10.5281/zenodo.21349453</span>
+              <a href="https://doi.org/10.5281/zenodo.21349453" target="_blank" rel="noopener noreferrer" class="mono text-[10px] text-amber-500 hover:underline">DOI: 10.5281/zenodo.21349453 &rarr;</a>
             </div>
           </div>
 
@@ -316,11 +316,34 @@
         </div>
       </section>
 
-      <!-- SECTION 4: One More Thing -->
+      <!-- SECTION 4: Thoughtfulness -->
       <section class="relative space-y-6">
         <!-- Node Marker -->
         <div class="absolute -left-10 md:-left-20 top-1.5 flex items-center justify-center w-6 h-6 md:w-9 md:h-9 rounded-full bg-slate-900 border-2 border-slate-700 text-slate-400 mono text-xs font-bold">
           04
+        </div>
+
+        <div class="space-y-2">
+          <span class="mono text-xs uppercase tracking-widest text-slate-500 font-semibold">Thoughtfulness</span>
+          <h2 class="text-2xl md:text-3xl font-bold text-slate-100">Don't Tell Anyone</h2>
+        </div>
+
+        <div class="p-6 rounded-xl bg-slate-900/40 border border-slate-800 space-y-3">
+          <div class="flex justify-between items-baseline">
+            <h3 class="font-bold text-slate-200">Antimemetics</h3>
+            <a href="https://antimemetics.blog" target="_blank" rel="noopener noreferrer" class="mono text-xs text-amber-500 hover:underline">antimemetics.blog &rarr;</a>
+          </div>
+          <p class="text-xs text-slate-400 leading-relaxed">
+            Explorations in self-censoring data, cognitive hazards, and ideas that actively resist dissemination across complex networks.
+          </p>
+        </div>
+      </section>
+
+      <!-- SECTION 5: One More Thing -->
+      <section class="relative space-y-6">
+        <!-- Node Marker -->
+        <div class="absolute -left-10 md:-left-20 top-1.5 flex items-center justify-center w-6 h-6 md:w-9 md:h-9 rounded-full bg-slate-900 border-2 border-slate-700 text-slate-400 mono text-xs font-bold">
+          05
         </div>
 
         <div class="space-y-2">
@@ -351,13 +374,15 @@
           </p>
         </div>
 
-        <div class="space-y-2">
-          <h4 class="font-bold text-slate-200 uppercase tracking-wider mono text-[11px]">Primary Portals</h4>
-          <ul class="space-y-1.5 mono text-slate-400">
-            <li><a href="https://air-kit.tech" target="_blank" class="hover:text-amber-400 transition-colors">AIR-Kit Security Engine</a></li>
-            <li><a href="https://ctolunchnyc.substack.com" target="_blank" class="hover:text-amber-400 transition-colors">CTO Lunch NYC Substack</a></li>
-            <li><a href="https://buildai.substack.com" target="_blank" class="hover:text-amber-400 transition-colors">Build AI Technical Journal</a></li>
-          </ul>
+        <!-- Nested Primary CTA Card -->
+        <div class="p-4 rounded-xl bg-slate-900/80 border border-amber-500/30 space-y-3">
+          <h4 class="font-bold text-amber-500 uppercase tracking-wider mono text-[11px]">Direct Contact</h4>
+          <p class="text-slate-400 text-xs leading-relaxed">
+            Architectural consultation, advisory, or emergency AI security response:
+          </p>
+          <a href="mailto:mars@mlops.nyc" class="inline-block mono text-xs px-3 py-1.5 rounded bg-amber-500/10 text-amber-400 border border-amber-500/40 hover:bg-amber-500/20 transition-all font-semibold">
+            mars@mlops.nyc &rarr;
+          </a>
         </div>
 
         <div class="space-y-2">
